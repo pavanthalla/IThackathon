@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Sports Information
+	</title>
+	<style>
+		ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+button:hover {
+    background-color: #111;
+	cursor: pointer;
+}
+button {
+	background-color:#333;
+	color:white;
+	border:none;
+}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function enrollf() {
+    var x = document.getElementById("enroll-div");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+</head>
+<body>
+<div style=" background-color: #6494e0;
+    color: white;
+	position:static;">
+	<table >
+		<tr>
+			<td>
+				<img src="logo.png">
+			</td>
+			<td style="font-family:;">
+				<h2 style="color:white;
+				weight:20px;"><b>CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY (AUTONOMOUS) - SPORTS</b></h2>
+			</td>
+		</tr>	
+	</table>
+	</div>
+	<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="returns.php">Returns</a></li>
+  <li id="asd"><button onclick="myFunction()"><a>Admin</a></button></li>
+  <li><button onclick="myFunction1()"><a>Enroll</a></button></li>
+  <li><a href="findpay.php">Find Payments</a></li>
+  <li><button onclick="myFunction2()"><a>About</a></button></li>
+</ul>
+<script>
+function myFunction1() {
+    var x = document.getElementById("Enrolldiv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<script>
+function myFunction2() {
+    var x = document.getElementById("info");
+	var y= document.getElementById("abo");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+		y.style.display="block";
+    }
+}
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("Admindiv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		
+    } else {
+        x.style.display = "none";
+		y.style.display="block";
+    }
+}
+</script>
+<div id="Admindiv" style="display:none;">
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<div id="lower">
+<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+<input type="submit" value="Login">
+</div><!--/ lower-->
+</form>
+</div>
+<div id="Enrolldiv" style="display:none;">
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+<div id="lower">
+<input type="checkbox"><label for="checkbox">Keep me logged in</label>
+<input type="submit" value="Login">
+</div><!--/ lower-->
+</form>
+</div>
+
+<div id="info">
+	<table>
+		<tr>
+			<td>
+				<p class="sport">
+					Cricket
+				</p>
+							
+			</td>
+		</tr>
+	</table>
+</div>
+<div>
+enroll
+
+</div>
+<div>    
+fee paymenyts<br>
+
+<b>
+<head>
+<style>
+body {background-color: lightblue;}
+label   {color: red;}
+label  {
+        padding-left:350px;
+}
+input {
+    padding-left: -100px;
+}
+
+.w3-button {width:150px;height: 30px}
+p   {
+    padding-left: 560px;
+    padding-top: 5px;
+}
+.ab {
+     margin-left: 500px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+ }
+
+</style>
+</head>
+<body>
+    <form action="" method="POST"> 
+      
+       <label style="font-size:25px;"><b>Enter Your Roll.No</label>
+       <input type=textbox name="Enter Your Roll.No"><br>
+       
+       <p><button class="w3-button w3-border w3-large w3-blue"><b>OK</button></p>
+    <label style="font-size:20px;color: brown"><b>Total Fine: </label>
+    <input style="font-size:px;"type=textbox name="Fine"><br>
+    <h3><button class="ab"><b>PAYMENT</button></h3>
+   </body>
+</div>
+<div id="abo" style="display:none;">
+	<article>
+		About...
+CBIT is also famous for sports where the students from this college have won many medals in different
+intercollege championship. In the CBIT sports complex there is problem,that problem is given as problem
+statement. To solve that problem the idea to develop thus webpage is created
+This webpage is used to give the information about the eqiupments present in the sports complex. We
+can acces this web page from anywhere .
+We have to open this webpage and click the availabilty button present in the page to see the availabilty
+of the equipments of respective sports.here we have games like cricket,basket ball, volley
+ball,football,throw ball,chess,carroms,table tennis,badminton for which we have equipments like bat ,ball
+and etc..,so we created a platform where a user can able to know the availabilty of those eqipments .If
+the user want to take them ,then the admin who is present in the cabin as to task the user for details like
+rollno and password.
+The admin used to open the issue link and subbmit the details into it and it will check whether there is
+any fine or not. If there is no fine then the thing will be given to user and he has to return it within the time
+that was given by the admin.
+contact:
+Praneeth Prasad - 7416437358
+Durga Prasad - 9100173002
+Jai Simha - 9491861548
+Hemanth Kakarla - 9542824868
+Pavan Thalla - 7989116443
+Manideep Laxmishetty - 7416262753
+	</article>
+</div>
+</body>
+</html>
